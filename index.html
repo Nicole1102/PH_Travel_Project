@@ -5,9 +5,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!--jquery mobile-->
+    <link rel="stylesheet" href="themes/custheme.css" />
+    <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
     <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/icon.png" type="image/x-icon">
+
+    <!--google font-->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&family=Trispace&display=swap" rel="stylesheet">
+
+    <style>
+
+        #home img{
+            max-width:100%;
+        }
+        #page04 img{
+            max-width:100%;
+        }
+        .ui-body-c, .ui-header {
+            font-family: 'Noto Sans TC', sans-serif;
+        }
+        .ui-footer {
+                font-family:'Trispace', sans-serif;
+        }
+        .video {
+            position:relative;
+            padding-bottom: 56.25%;
+            overflow: hidden;
+            
+        }
+
+        .video iframe {
+            position: absolute;
+            top: 0;
+            left: 0; 
+            width: 100%;
+            height: 100%;
+        }
+        .video-wrappy {
+            position:relative;
+            padding-bottom: 56.25%;
+            overflow: hidden;
+            
+        }
+
+        .video-wrappy iframe {
+            position: absolute;
+            top: 0;
+            left: 0; 
+            width: 100%;
+            height: 100%;
+        }
+        .video1 {
+            position:relative;
+            padding-bottom: 56.25%;
+            overflow: hidden;
+            
+        }
+
+        .video1 iframe {
+            position: absolute;
+            top: 0;
+            left: 0; 
+            width: 100%;
+            height: 100%;
+        }
+
+
+
+    </style>
 
     <title>澎湖旅遊</title>
 </head>
@@ -20,13 +89,26 @@
         </div><!-- /header -->
 
         <div role="main" class="ui-content">
-            <p>Hello world</p>
-                <a href="#page01" data-transition="slide" data-role="button">歷史地理</a>
-                <a href="#page02" data-transition="slide" data-role="button">特色景點</a>
-                <a href="#page03" data-transition="slide" data-role="button">在地美食</a>
-                <a href="#page04" data-transition="slide" data-role="button">交通資訊</a>
-                <a href="#about" data-transition="slide" data-role="button">關於我們</a>
+            <h1>澎湖旅遊</h1>
+            <img src="images/20200805112802_40.jpg" alt="">
             
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#page01">
+                    <img src="https://picsum.photos/300" alt="">
+                    <h2>歷史地理</h2>
+                    <p>澎湖的歷史...地理....</p>
+                    
+                </a></li>
+                <li><a href="#page02">
+                    <img src="https://picsum.photos/400" alt="">
+                    <h2>特色景點</h2>
+                    <p>澎湖的景點...</p>
+                    
+                </a></li>
+                <li><a href="#page03">在地美食</a></li>
+                <li><a href="#page04">交通資訊</a></li>
+                <li><a href="#about">關於我們</a></li>
+            </ul>
         </div><!-- /content -->
 
         <div data-role="footer" data-position="fixed">
@@ -43,6 +125,9 @@
 
         <div role="main" class="ui-content">
             <p>歷史地理</p>
+            <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/PEHsDTGcqis" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
         </div><!-- /content -->
 
         <div data-role="footer" data-position="fixed">
@@ -59,6 +144,9 @@
 
         <div role="main" class="ui-content">
             <p>特色景點</p>
+            <div class="video-wrappy">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/J6LylZnCjm0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
         </div><!-- /content -->
 
         <div data-role="footer" data-position="fixed">
@@ -75,6 +163,16 @@
 
         <div role="main" class="ui-content">
             <p>在地美食</p>
+            <p>- 頻道關鍵字 -
+                「旅遊。美食。生活」
+                台灣旅遊/國內旅遊/國外旅遊/東南亞旅遊
+                美食/咖啡廳/酒吧
+                青年旅館/背包客/自助旅行
+                登山/露營</p>
+            <div class="video1">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/zd8pW5cxhAI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            
+        </div>
         </div><!-- /content -->
 
         <div data-role="footer" data-position="fixed">
@@ -91,6 +189,16 @@
 
         <div role="main" class="ui-content">
             <p>交通資訊</p>
+            <img src="images/airplane.png" alt="">
+            <p>從時間以及自在度來看，搭飛機前往澎湖是相較舒適的交通方式。台灣到澎湖本島的飛機航線， 從北的台北松山機場，至南的高雄小港機場，立榮航空與華信航空都有營運。飛往澎湖票價約落在旺季機票票價約2,500～3,000左右，而其中就屬立榮航空班次最多；另外在航行的時間上，不管從台灣的哪個地點出發，都能在一個小時內抵達澎湖機場。
+
+                編輯小提醒：
+                
+                遇上澎湖花火節機位常常一位難求，建議碰到旺季可以提前兩個月左右預訂喔！
+                澎湖機場屬於軍民合一機場，是禁止拍攝、錄影的喔！（還有台中清泉崗機場和台南機場也是。）</p>
+            <img src="images/船.png" alt="">
+            <p>若是想省錢時間也還算充裕的人也可以選擇搭船，但是搭船需要考量到當日的天氣以及海況喔，從嘉義布袋、台中港、高雄前往澎湖的港口會比較固定，但以航班固定性來說，嘉義跟台中會比較方便喔！不僅比較近，行駛的船隻也比較多喔！</p>
+                 
         </div><!-- /content -->
 
         <div data-role="footer" data-position="fixed">
@@ -107,6 +215,7 @@
 
         <div role="main" class="ui-content">
             <p>關於我們</p>
+            <p>歡迎參觀 想看什麼關於澎湖的資訊 影片都會介紹!</p>
         </div><!-- /content -->
 
         <div data-role="footer" data-position="fixed">
