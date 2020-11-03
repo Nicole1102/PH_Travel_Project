@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!--jquery mobile-->
-    <link rel="stylesheet" href="themes/custheme.css" />
+    <link rel="stylesheet" href="themes/themes.css" />
     <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
-    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" /> 
+
+
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 
@@ -19,7 +21,7 @@
 
     <style>
 
-        #home img{
+        #home img{ cvvvvv
             max-width:100%;
         }
         #page04 img{
@@ -105,14 +107,22 @@
                     <p>澎湖的景點...</p>
                     
                 </a></li>
-                <li><a href="#page03">在地美食</a></li>
-                <li><a href="#page04">交通資訊</a></li>
-                <li><a href="#about">關於我們</a></li>
+                <li><a href="#page03"class="ui-btn ui-icon-search ui-btn-icon-left">在地美食</a></li>
+                <li><a href="#page04"class="ui-btn ui-icon-search ui-btn-icon-left">交通資訊</a></li>
+                <li><a href="#about" class="ui-btn ui-icon-info ui-btn-icon-left">關於我們</a></li>
             </ul>
         </div><!-- /content -->
 
         <div data-role="footer" data-position="fixed">
             <h4>Copyright &copy; 2020 Wenzao DCAM Nicole</h4>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#page02" data-icon="bullets">特色景點</a></li>
+                    <li><a href="#page04" data-icon="bullets">交通資訊</a></li>
+                    <li><a href="#page03" data-icon="bullets">在地美食</a></li>
+                    <li><a href="#about" data-icon="bullets" data-transition="slidedown">關於我們</a></li>
+                </ul>
+            </div>
         </div><!-- /footer -->
     </div><!-- 首頁 -->
 
@@ -220,7 +230,10 @@
 
         <div data-role="footer" data-position="fixed">
             <h4>Copyright &copy; 2020 Wenzao DCAM Nicole</h4>
+        
         </div><!-- /footer -->
+   
     </div><!-- 關於我們 -->
+    
 </body>
 </html>
